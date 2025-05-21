@@ -1,0 +1,28 @@
+# UI Framework
+gradio
+
+# Langchain - Core, Community, OpenAI client (for OpenAI-compatible local server), Unstructured loader
+langchain
+langchain-community
+langchain_openai # For ChatOpenAI client, can connect to local OpenAI-compatible server
+langchain-unstructured # For the UnstructuredLoader
+
+# Document Processing & OCR
+unstructured[local-inference] # Includes PDF processing, and tries to pull some OCR basics.
+Pillow
+pytesseract
+pdf2image # For explicit OCR if Unstructured needs help or for direct image OCR
+
+# Embedding Models (Local SentenceTransformers)
+sentence-transformers
+torch # Required by sentence-transformers
+
+# Vector Database (ChromaDB)
+chromadb
+
+# Utilities
+python-dotenv # For .env file management
+tiktoken # Often a sub-dependency for token counting in Langchain
+# httpx # Might not be needed if Gradio handles internal HTTP or we don't make other API calls
+
+# Ensure Tesseract OCR engine and Poppler utilities are installed on your system
